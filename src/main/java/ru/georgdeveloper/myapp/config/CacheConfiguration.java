@@ -50,6 +50,18 @@ public class CacheConfiguration {
             createCache(cm, ru.georgdeveloper.myapp.domain.User.class.getName());
             createCache(cm, ru.georgdeveloper.myapp.domain.Authority.class.getName());
             createCache(cm, ru.georgdeveloper.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, ru.georgdeveloper.myapp.domain.Region.class.getName());
+            createCache(cm, ru.georgdeveloper.myapp.domain.Country.class.getName());
+            createCache(cm, ru.georgdeveloper.myapp.domain.Location.class.getName());
+            createCache(cm, ru.georgdeveloper.myapp.domain.Department.class.getName());
+            createCache(cm, ru.georgdeveloper.myapp.domain.Department.class.getName() + ".employees");
+            createCache(cm, ru.georgdeveloper.myapp.domain.Task.class.getName());
+            createCache(cm, ru.georgdeveloper.myapp.domain.Task.class.getName() + ".jobs");
+            createCache(cm, ru.georgdeveloper.myapp.domain.Employee.class.getName());
+            createCache(cm, ru.georgdeveloper.myapp.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, ru.georgdeveloper.myapp.domain.Job.class.getName());
+            createCache(cm, ru.georgdeveloper.myapp.domain.Job.class.getName() + ".tasks");
+            createCache(cm, ru.georgdeveloper.myapp.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
